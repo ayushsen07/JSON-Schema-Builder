@@ -1,5 +1,5 @@
 import React from 'react';
-import { Input, Select } from 'antd';
+import { Input, Select, Switch } from 'antd';
 import { CloseOutlined } from '@ant-design/icons';
 
 // set the field types string, number, nested
@@ -16,12 +16,14 @@ const FieldInput = ({ field, index, onKeyChange, onTypeChange, onRemove }) => {
       />
       <Select 
         placeholder="Field Type"
-        value={field.type}
+        value={field.type || null}
         onChange={(val) => onTypeChange(index, val)}
         style={{ width: 400 }}
         options={FIELD_TYPES.map((type) => ({ label: type, value: type }))}
       />
+      <Switch/>
       <CloseOutlined onClick={() => onRemove(index)} />
+      
     </div>
   );
 };
