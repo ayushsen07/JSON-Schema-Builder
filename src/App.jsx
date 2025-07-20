@@ -10,7 +10,7 @@ const App = () => {
       <div style={{ width: '40%' }}>
         <SchemaBuilder data={formData} onChange={setFormData} />
       </div>
-      <div style={{ width: '40%', backgroundColor : '#eeeee' }}>
+      <div style={{ width: '40%', backgroundColor : '#eeee' }}>
         <JsonPreview fields={formData.fields} />
       </div>
     </div>
