@@ -10,9 +10,9 @@ const buildJsonFromFields = (fields) => {
     if (field.type === 'nested') {
       result[field.key] = buildJsonFromFields(field.fields || []);
     } 
-    if(field.type==='string'){
-      result[field.key]= field.type.toUpperCase()
-    }
+    else if(field.type==='string'){
+       result[field.key]= field.type.toUpperCase()
+     }
     else {
       result[field.key] = field.type;
     }
