@@ -8,7 +8,7 @@ const FIELD_TYPES = ['string', 'number', 'nested'];
 // feild inputs 
 const FieldInput = ({ field, index, onKeyChange, onTypeChange, onRemove }) => {
   return (
-    <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
+    <div className='flex gap-2 items-center'>
       <Input
         placeholder="Key"
         value={field.key}
