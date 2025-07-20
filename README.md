@@ -1,12 +1,39 @@
-# React + Vite
+# JSON Schema Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based interactive tool to create JSON schema structures dynamically. Useful for form configurations, API schemas, or understanding nested JSON formats visually.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- Dynamically add fields with custom keys and types
+- Support for field types: `String`, `Number`, and `Nested`
+- Add nested fields recursively for complex structures
+- JSON schema preview updates in real-time
+- Clean and intuitive user interface using Ant Design
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- **React.js** – UI library
+- **JavaScript**
+- **Ant Design** – component library (Buttons, Inputs, Selects)
+
+---
+
+## 📸 Project Previews
+
+| Schema Builder UI | Live JSON Preview |
+|-------------------|-------------------|
+| <img width="600" src="https://github.com/user-attachments/assets/545929d5-3194-43d1-9da8-e108087c1328" /> | <img width="600" src="https://github.com/user-attachments/assets/fd458ff6-94c2-4684-940d-cd904d1425ea" /> |
+
+---
+
+## 📂 How to Run
+
+```bash
+git clone https://github.com/your-username/json-schema-builder.git
+cd json-schema-builder
+npm install
+npm run dev
